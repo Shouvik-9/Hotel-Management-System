@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">HMS</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-blue-200">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-200">Rooms</a></li>
+                    <li><a href="#" class="hover:text-blue-200">Services</a></li>
+                    <li><a href="#" class="hover:text-blue-200">About</a></li>
+                    <li><a href="#" class="hover:text-blue-200">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8">
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Welcome to Our Hotel Management System</h2>
+            <p class="text-gray-600">Experience seamless hotel management with our comprehensive system. Book rooms, manage services, and enjoy a luxurious stay.</p>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <section class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold mb-4">Room Reservation</h3>
+                <form>
+                    <div class="mb-4">
+                        <label for="check-in" class="block text-gray-700 mb-2">Check-in Date</label>
+                        <input type="date" id="check-in" class="w-full px-3 py-2 border rounded-md">
+                    </div>
+                    <div class="mb-4">
+                        <label for="check-out" class="block text-gray-700 mb-2">Check-out Date</label>
+                        <input type="date" id="check-out" class="w-full px-3 py-2 border rounded-md">
+                    </div>
+                    <div class="mb-4">
+                        <label for="room-type" class="block text-gray-700 mb-2">Room Type</label>
+                        <select id="room-type" class="w-full px-3 py-2 border rounded-md">
+                            <option>Standard</option>
+                            <option>Deluxe</option>
+                            <option>Suite</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Check Availability</button>
+                </form>
+            </section>
+
+            <section class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold mb-4">Our Services</h3>
+                <ul class="list-disc list-inside text-gray-600">
+                    <li>24/7 Room Service</li>
+                    <li>Restaurant & Bar</li>
+                    <li>Laundry Services</li>
+                    <li>Car Rental</li>
+                    <li>Spa & Wellness Center</li>
+                    <li>Business Center</li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mt-8">
+            <h3 class="text-xl font-semibold mb-4">Customer Reviews</h3>
+            <div class="flex items-center mb-4">
+                <div class="text-yellow-400 text-2xl mr-2">★★★★☆</div>
+                <span class="text-gray-600">4.5 out of 5 stars</span>
+            </div>
+            <p class="text-gray-600 italic">"Excellent service and beautiful rooms. Will definitely come back!" - John D.</p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-12 py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Hotel Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
