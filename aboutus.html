@@ -1,18 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="stylesheet" type="text/css" href="style2.css">
-    <link
-            rel="icon"
-            href=
-"./RESTEASY (1).png"
-            type="image/x-icon"
-        />
+    <link rel="icon" href="./RESTEASY (1).png" type="image/x-icon" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .section {
+            width: 100%;
+            min-height: 100vh;
+            background-color: #a8d7e6;
+        }
+
+        .container {
+            width: 80%;
+            display: flex;
+            margin: auto;
+            padding-top: 100px;
+            gap: 20px;
+        }
+
+        .content-section {
+            width: 45%;
+        }
+
+        .image-section {
+            width: 55%;
+            display: flex;
+            align-items: flex-start;
+            margin-top: 50px;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 100%;
+        }
+
+        .content-section .title {
+            text-transform: uppercase;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .content-section .content h3 {
+            margin-top: 10px;
+            color: #36393a;
+            font-size: 19px;
+        }
+
+        .content-section .content h2 {
+            margin-top: 20px;
+            color: #5d5d5d;
+        }
+
+        .content-section .content .button {
+            margin-top: 30px;
+        }
+
+        .content-section .content .button a {
+            background-color: #657162;
+            padding: 12px 40px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            letter-spacing: 1.5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .content-section .content .button a:hover {
+            background-color: #a52a2a;
+            color: #fff;
+        }
+
+        .content-section .social {
+            margin: 40px 0;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .content-section .social a {
+            text-decoration: none;
+        }
+
+        .content-section .social i {
+            font-size: 30px;
+            padding: 15px;
+            transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #fff;
+        }
+
+        /* Facebook Icon */
+        .content-section .social a:nth-child(1) i {
+            background-color: #3b5998;
+        }
+
+        .content-section .social a:nth-child(1) i:hover {
+            background-color: #365e7d;
+        }
+
+        /* WhatsApp Icon */
+        .content-section .social a:nth-child(2) i {
+            background-color: #25D366;
+        }
+
+        .content-section .social a:nth-child(2) i:hover {
+            background-color: #128C7E;
+        }
+
+        /* Instagram Icon */
+        .content-section .social a:nth-child(3) i {
+            background-color: #E1306C;
+        }
+
+        .content-section .social a:nth-child(3) i:hover {
+            background-color: #C13584;
+        }
+
+        /* Hover effect for icons */
+        .content-section .social i:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Media Query for Tablets */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content-section,
+            .image-section {
+                width: 100%;
+            }
+
+            .content-section .title {
+                text-align: center;
+                font-size: 24px;
+            }
+
+            .content-section .content .button {
+                text-align: center;
+            }
+
+            .content-section .social {
+                text-align: center;
+            }
+
+            .content-section .social i {
+                font-size: 25px;
+            }
+        }
+
+        /* Media Query for Mobile */
+        @media screen and (max-width: 576px) {
+            .content-section .social i {
+                font-size: 20px;
+            }
+
+            .content-section .title {
+                font-size: 22px;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <div class="section">
         <div class="container">
@@ -21,28 +191,39 @@
                     <h1 id="typing-text"></h1>
                 </div>
                 <div class="content">
-                    <h3 id="initial-content">Welcome to Rest Easy! We are dedicated to providing our guests with a blend of elegance, 
-                        comfort, and exceptional hospitality. Located in Kolkata, our hotel is an ideal escape from 
-                        the hustle and bustle, offering serene surroundings, top-tier amenities, and outstanding service.</h3>
+                    <h3 id="initial-content">Welcome to Rest Easy! We are dedicated to providing our guests with a blend
+                        of elegance,
+                        comfort, and exceptional hospitality. Located in Kolkata, our hotel is an ideal escape from
+                        the hustle and bustle, offering serene surroundings, top-tier amenities, and outstanding
+                        service.</h3>
 
                     <h2>Our Mission</h2>
-                    <h3>Our mission is to create memorable experiences that bring guests back to Rest Easy time and again. 
-                        We believe in the power of personalized service, high-quality facilities, and attention to every detail to make 
+                    <h3>Our mission is to create memorable experiences that bring guests back to Rest Easy time and
+                        again.
+                        We believe in the power of personalized service, high-quality facilities, and attention to every
+                        detail to make
                         each stay unforgettable.</h3>
                     <div id="more-content" style="display: none;">
                         <h2>Our Vision</h2>
-                        <h3>We strive to be a leader in the hospitality industry, known for our innovation, integrity, and commitment to 
-                            delivering the best possible guest experience. By embracing sustainable practices and supporting our community, 
+                        <h3>We strive to be a leader in the hospitality industry, known for our innovation, integrity,
+                            and commitment to
+                            delivering the best possible guest experience. By embracing sustainable practices and
+                            supporting our community,
                             we aim to make a positive impact on both our guests and our environment.</h3>
 
                         <h2>Our Values</h2>
-                        <h3>Guest-Centered Service: Our guests are our priority, and we aim to exceed their expectations at every touchpoint.
-                            Quality and Excellence: We are committed to offering high-quality services, from room amenities to dining experiences.
-                            Sustainability: We believe in responsible hospitality, integrating sustainable practices into our operations.</h3>
+                        <h3>Guest-Centered Service: Our guests are our priority, and we aim to exceed their expectations
+                            at every touchpoint.
+                            Quality and Excellence: We are committed to offering high-quality services, from room
+                            amenities to dining experiences.
+                            Sustainability: We believe in responsible hospitality, integrating sustainable practices
+                            into our operations.</h3>
 
                         <h2>Why Choose Us?</h2>
-                        <h3>At Rest Easy, we go beyond offering a place to stay. We provide an experience that combines comfort, convenience, 
-                            and a touch of luxury. Whether you're here for business or leisure, our staff is here to make your stay seamless and 
+                        <h3>At Rest Easy, we go beyond offering a place to stay. We provide an experience that combines
+                            comfort, convenience,
+                            and a touch of luxury. Whether you're here for business or leisure, our staff is here to
+                            make your stay seamless and
                             enjoyable.</h3>
                     </div>
 
@@ -51,10 +232,13 @@
                     </div>
                 </div>
                 <div class="social">
-                    <a href="https://www.facebook.com/shouvik.dutta.102?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://wa.me/9932643387" target="_blank""><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/i_am_shouvik122?igsh=NnJhZ2dvN3pqN2Rr" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/shouvik.dutta.102?mibextid=ZbWKwL" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/9932643387" target="_blank""><i class=" fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/i_am_shouvik122?igsh=NnJhZ2dvN3pqN2Rr" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
                 </div>
+
             </div>
             <div class="image-section">
                 <img src="img one.png" alt="image">
@@ -120,4 +304,5 @@
         });
     </script>
 </body>
+
 </html>
